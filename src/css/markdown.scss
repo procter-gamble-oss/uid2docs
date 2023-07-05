@@ -82,6 +82,10 @@
     }
   }
 
+  td {
+    word-break: break-all;
+  }
+
   table tr:nth-child(2n) {
     background-color: inherit;
 

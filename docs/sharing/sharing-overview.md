@@ -39,12 +39,24 @@ As part of sharing, the UID2 SDKs take care of the encryption and decryption.
 
 The following example shows a fictitious email, user@example,com, as it goes through the stages to be converted securely into a raw UID2, encrypted into a UID2 token, and decrypted by an authorized participant.
 
-<!-- <table>
+<table>
+<colgroup>
+    <col style={{
+      width: "30%"
+    }} />
+    <col style={{
+      width: "40%"
+    }} />
+    <col style={{
+      width: "30%"
+    }} />
+   
+  </colgroup>
 <thead>
 <tr>
-<th style="width:30%">Input Example</th>
-<th style="width:40%">Process/User</th>
-<th style="width:30%">Result</th>
+<th>Input Example</th>
+<th>Process/User</th>
+<th >Result</th>
 </tr>
 </thead>
 <tbody>
@@ -59,12 +71,12 @@ The following example shows a fictitious email, user@example,com, as it goes thr
 <td>KlKKKfE66A7xBnL/DsT1UV/Q+V/r3xwKL89Wp7hpNllxmNkPaF8vdzenDvfoatn6sSXbFf5DfW9wwbdDwMnnOVpPxojkb8KYSGUte/FLSHtg4CLKMX52UPRV7H9UbWYvXgXC4PaVrGp/Jl5zaxPIDbAW0chULHxS+3zQCiiwHbIHshM+oJ==</td>
 </tr>
 </tbody>
-</table> -->
+</table>
 
-| Input Example | Process/User | Result |
+<!-- | Input Example | Process/User | Result |
 | :--- | :--- | :--- |
 | user@example.com |Conversion to a raw UID2, used for internal participant processing, using the [POST /identity/map](../endpoints/post-identity-map.md) endpoint. | K2jlbu2ldlpKL1z6n5bET7L3g0xfqmldZPDdPTktdRQ= |
-| K2jlbu2ldlpKL1z6n5bET7L3g0xfqmldZPDdPTktdRQ= |Encryption from a raw UID2 to a UID2 token that a sharing participant can send securely to another participant (see [Encrypting Requests](../getting-started/gs-encryption-decryption.md#encrypting-requests)). | KlKKKfE66A7xBnL/DsT1UV/Q+V/r3xwKL89Wp7hpNllxmNkPaF8vdzenDvfoatn6sSXbFf5DfW9wwbdDwMnnOVpPxojkb8KYSGUte/FLSHtg4CLKMX52UPRV7H9UbWYvXgXC4PaVrGp/Jl5zaxPIDbAW0chULHxS+3zQCiiwHbIHshM+oJ==  |
+| K2jlbu2ldlpKL1z6n5bET7L3g0xfqmldZPDdPTktdRQ= |Encryption from a raw UID2 to a UID2 token that a sharing participant can send securely to another participant (see [Encrypting Requests](../getting-started/gs-encryption-decryption.md#encrypting-requests)). | KlKKKfE66A7xBnL/DsT1UV/Q+V/r3xwKL89Wp7hpNllxmNkPaF8vdzenDvfoatn6sSXbFf5DfW9wwbdDwMnnOVpPxojkb8KYSGUte/FLSHtg4CLKMX52UPRV7H9UbWYvXgXC4PaVrGp/Jl5zaxPIDbAW0chULHxS+3zQCiiwHbIHshM+oJ==  | -->
 
 Alternatively, in a scenario where you don't need to store the raw UID2, you can convert the input email address or phone number directly to a UID2 token in one operation:
 
